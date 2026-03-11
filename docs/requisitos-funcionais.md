@@ -1,145 +1,155 @@
 # Requisitos Funcionais — Sistema Urbanly
 
+---
+
 ## RF001 — Fazer Cadastro de Usuário
+**Prioridade:** Essencial  
 
-**Prioridade:** Essencial
+**Descrição:**  
+O sistema deve permitir que o usuário realize cadastro informando nome, e-mail e senha para criação de uma conta no aplicativo.
 
-**Descrição:**
-O sistema deve permitir que o usuário realize seu cadastro informando dados básicos, como nome, e-mail e senha, para criação de uma conta no aplicativo.
-
-**Alternativa:**
-O sistema também deve permitir cadastro utilizando autenticação social por meio da conta Google.
+O cadastro também poderá ser realizado por meio de autenticação social utilizando conta Google.
 
 ---
 
 ## RF002 — Fazer Login
+**Prioridade:** Essencial  
 
-**Prioridade:** Essencial
-
-**Descrição:**
-O sistema deve permitir que o usuário se autentique utilizando e-mail e senha ou login social com Google para acessar as funcionalidades principais do aplicativo.
+**Descrição:**  
+O sistema deve permitir que o usuário realize autenticação utilizando e-mail e senha ou login social com Google para acessar funcionalidades que exigem autenticação.
 
 ---
 
 ## RF003 — Editar Perfil
+**Prioridade:** Essencial  
 
-**Prioridade:** Essencial
+**Descrição:**  
+O sistema deve permitir que usuários autenticados editem suas informações de perfil, incluindo:
 
-**Descrição:**
-O sistema deve permitir que o usuário edite suas informações de perfil, incluindo nome, foto e senha.
+- nome
+- foto
+- senha
 
 ---
 
 ## RF004 — Cadastrar Estabelecimento
+**Prioridade:** Essencial  
 
-**Prioridade:** Essencial
-
-**Descrição:**
+**Descrição:**  
 O sistema deve permitir o cadastro de estabelecimentos contendo as seguintes informações:
 
-* Nome do estabelecimento
-* Descrição
-* Endereço
-* Categoria
-* Palavras-chave
-* Horário de funcionamento
-* Fotos
+- nome do estabelecimento
+- descrição
+- endereço
+- categoria
+- palavras-chave
+- horário de funcionamento
+- fotos
 
 ---
 
 ## RF005 — Buscar Estabelecimentos por Palavra-Chave
+**Prioridade:** Essencial  
 
-**Prioridade:** Essencial
+**Descrição:**  
+O sistema deve permitir que qualquer usuário (autenticado ou não) pesquise estabelecimentos utilizando palavras-chave ou nome do local.
 
-**Descrição:**
-O sistema deve permitir que o usuário pesquise estabelecimentos por meio de palavras-chave ou pelo nome do local, retornando resultados correspondentes.
+O sistema deve retornar uma lista de resultados correspondentes.
 
 ---
 
 ## RF006 — Filtrar Estabelecimentos
+**Prioridade:** Essencial  
 
-**Prioridade:** Essencial
+**Descrição:**  
+O sistema deve permitir que qualquer usuário aplique filtros aos resultados da busca.
 
-**Descrição:**
-O sistema deve permitir que o usuário aplique filtros nos resultados de busca, incluindo:
+Os filtros disponíveis devem incluir:
 
-* Categoria
-* Cidade
-* Avaliação média
-
----
-
-## RF007 — Visualizar Detalhes do Estabelecimento
-
-**Prioridade:** Essencial
-
-**Descrição:**
-O sistema deve permitir que o usuário visualize informações completas de um estabelecimento, incluindo:
-
-* Descrição
-* Endereço
-* Palavras-chave
-* Fotos
-* Avaliações
+- categoria
+- cidade
+- avaliação média
 
 ---
 
-## RF008 — Avaliar Estabelecimento
+## RF007 — Visualizar Resultados de Busca
+**Prioridade:** Essencial  
 
-**Prioridade:** Essencial
+**Descrição:**  
+O sistema deve exibir uma lista de estabelecimentos encontrados a partir da busca realizada.
 
-**Descrição:**
-O sistema deve permitir que usuários autenticados atribuam uma nota ao estabelecimento em uma escala de **1 a 5 estrelas** e registrem um comentário sobre sua experiência.
+Para usuários não autenticados, devem ser exibidas apenas informações resumidas:
 
----
-
-## RF009 — Visualizar Avaliações
-
-**Prioridade:** Essencial
-
-**Descrição:**
-O sistema deve exibir as avaliações registradas para cada estabelecimento, incluindo:
-
-* Nota atribuída
-* Comentário do usuário
-* Nome do usuário que realizou a avaliação
+- nome do estabelecimento
+- categoria
+- cidade
+- avaliação média
 
 ---
 
-## RF010 — Adicionar aos Favoritos
+## RF008 — Visualizar Detalhes do Estabelecimento
+**Prioridade:** Essencial  
 
-**Prioridade:** Importante
+**Descrição:**  
+O sistema deve permitir que usuários autenticados visualizem informações completas sobre um estabelecimento.
 
-**Descrição:**
-O sistema deve permitir que o usuário adicione ou remova estabelecimentos de sua lista de favoritos.
+As informações exibidas devem incluir:
+
+- descrição
+- endereço
+- palavras-chave
+- fotos
+- avaliações
+- comentários
+
+Caso um usuário não autenticado tente acessar os detalhes de um estabelecimento, o sistema deve solicitar login.
 
 ---
 
-## RF011 — Visualizar Estabelecimentos por Cidade
+## RF009 — Avaliar Estabelecimento
+**Prioridade:** Essencial  
 
-**Prioridade:** Essencial
+**Descrição:**  
+O sistema deve permitir que usuários autenticados avaliem um estabelecimento atribuindo uma nota entre **1 e 5 estrelas** e escrevendo um comentário sobre sua experiência.
 
-**Descrição:**
-O sistema deve permitir que o usuário visualize estabelecimentos disponíveis em uma cidade específica selecionada.
+---
+
+## RF010 — Visualizar Avaliações
+**Prioridade:** Essencial  
+
+**Descrição:**  
+O sistema deve exibir a lista de avaliações de um estabelecimento, incluindo:
+
+- nota atribuída
+- comentário
+- nome do usuário que realizou a avaliação
+
+Essa funcionalidade deve estar disponível apenas na visualização de detalhes do estabelecimento.
+
+---
+
+## RF011 — Adicionar aos Favoritos
+**Prioridade:** Importante  
+
+**Descrição:**  
+O sistema deve permitir que usuários autenticados adicionem ou removam estabelecimentos de sua lista de favoritos.
 
 ---
 
 ## RF012 — Administrar Estabelecimentos
+**Prioridade:** Importante  
 
-**Prioridade:** Importante
+**Descrição:**  
+O sistema deve permitir que administradores gerenciem estabelecimentos cadastrados, podendo:
 
-**Descrição:**
-O sistema deve permitir que um administrador gerencie os estabelecimentos cadastrados, incluindo:
-
-* Cadastro de novos estabelecimentos
-* Edição de estabelecimentos existentes
-* Remoção de estabelecimentos
+- cadastrar estabelecimentos
+- editar estabelecimentos
+- remover estabelecimentos
 
 ---
 
 ## RF013 — Moderar Avaliações
+**Prioridade:** Importante  
 
-**Prioridade:** Importante
-
-**Descrição:**
-O sistema deve permitir que um administrador modere avaliações publicadas pelos usuários, podendo remover avaliações que violem as diretrizes da plataforma.
+**Descrição:**  
+O sistema deve permitir que administradores removam avaliações que violem as diretrizes da plataforma.
