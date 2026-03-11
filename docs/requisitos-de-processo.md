@@ -62,3 +62,11 @@ facilitando manutenção e evolução do sistema.
 ## RNP006 — Testes do Sistema
 
 O sistema deve passar por **testes funcionais**, verificando se as funcionalidades implementadas estão operando corretamente conforme os requisitos definidos.
+
+---
+
+## RNP007 — Controle de acesso às funcionalidades
+
+O sistema deve implementar mecanismos de controle de acesso
+para diferenciar funcionalidades disponíveis para usuários
+autenticados e não autenticados.

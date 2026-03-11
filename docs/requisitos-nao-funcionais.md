@@ -40,7 +40,9 @@ garantindo boa experiência de uso.
 
 ## RNF003 — Segurança e Privacidade
 
-Os dados dos usuários devem ser protegidos utilizando mecanismos de segurança adequados, incluindo:
+O sistema deve proteger dados dos usuários por meio de mecanismos de segurança e implementar controle de acesso para diferenciar funcionalidades disponíveis para usuários autenticados e não autenticados.
+
+Incluindo:
 
 * criptografia de dados sensíveis
 * armazenamento seguro de credenciais
