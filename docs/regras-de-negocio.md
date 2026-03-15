@@ -53,15 +53,7 @@ Estabelecimentos removidos ou desativados pelo administrador não devem ser apre
 
 ---
 
-## RN006 — Garantir consistência das palavras-chave cadastradas
-
-O sistema deve garantir que **palavras-chave associadas a um estabelecimento sejam únicas**, evitando duplicidade dentro do mesmo estabelecimento.
-
-Isso garante consistência e melhor qualidade nos resultados de busca.
-
----
-
-## RN007 — Informações resumidas para usuários não autenticados
+## RN006 — Informações resumidas para usuários não autenticados
 
 Usuários não autenticados devem visualizar **apenas informações resumidas dos estabelecimentos** nos resultados de busca.
 
@@ -76,7 +68,7 @@ Informações detalhadas devem ser ocultadas até que o usuário realize login.
 
 ---
 
-## RN008 — Visualização completa apenas para usuários autenticados
+## RN007 — Visualização completa apenas para usuários autenticados
 
 Informações completas de um estabelecimento devem estar disponíveis **apenas para usuários autenticados**.
 
